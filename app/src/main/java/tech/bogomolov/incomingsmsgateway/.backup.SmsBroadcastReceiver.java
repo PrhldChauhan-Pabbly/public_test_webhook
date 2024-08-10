@@ -52,7 +52,7 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
         }
 
         for (ForwardingConfig config : configs) {
-            if (!sender.matches(config.getSender().replace("%", ".*")) && !config.getSender().equals(asterisk)) {
+            if (!sender.equals(config.getSender()) && !config.getSender().equals(asterisk)) {
                 continue;
             }
 

@@ -115,9 +115,9 @@ public class ForwardingConfigDialog {
         retriesNumInput.setText(String.valueOf(config.getRetriesNumber()));
 
         final CheckBox ignoreSslCheckbox = view.findViewById(R.id.input_ignore_ssl);
-        ignoreSslCheckbox.setVisibility(View.GONE);
+        ignoreSslCheckbox.setChecked(config.getIgnoreSsl());
+
         final CheckBox chunkedModeCheckbox = view.findViewById(R.id.input_chunked_mode);
-        chunkedModeCheckbox.setVisibility(View.GONE);
         chunkedModeCheckbox.setChecked(config.getChunkedMode());
 
         builder.setView(view);

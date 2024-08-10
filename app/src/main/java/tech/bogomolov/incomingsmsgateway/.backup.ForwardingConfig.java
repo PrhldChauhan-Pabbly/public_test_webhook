@@ -127,7 +127,7 @@ public class ForwardingConfig {
     }
 
     public static String getDefaultJsonHeaders() {
-        return "{\"User-agent\":\"Pabbly Connect Android App\"}";
+        return "{\"User-agent\":\"SMS Forwarder App\"}";
     }
 
     public static int getDefaultRetriesNumber() {
